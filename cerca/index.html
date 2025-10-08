@@ -1,30 +1,100 @@
-<html>
+<!DOCTYPE html>
+<html lang="ca">
 <head>
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparem coriandre</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
   <style>
-    h1{
-      font-family:"Arial";
+    /* Navbar siempre visible, opaca y encima del contenido */
+    .navbar {
+      position: sticky; /* se mantiene arriba */
+      top: 0;
+      z-index: 1030;   /* encima de todo el contenido */
+      background-color: rgba(255, 255, 255, 0.95); /* opaca, se puede ajustar */
     }
-    ul{
-      font-family:"Arial";
+    body[data-bs-theme="dark"] .navbar {
+      background-color: rgba(44, 44, 44, 0.95); /* versión oscura */
     }
-    p{
-      font-family:"Arial";
-     }
-  </style>
-                            
-<meta charset="UTF-8"> <!--Això es un comentari,set es conjunt i char es character o lletres i UTF-8 permet accents i ç -->
-  
-</head><body>
 
- <h1>Comparem coriandre ecològic i convencional: quin te mes nutrients segons la ciencia i segons la IA</h1>
- <p>He trobat diferents articles cientifics que estudian el meu tema i els trobareu a continuació en format APA7. APA7 es una forma d'escriure un article cientific</p>
- <ul>
-  <li>Autors(Añy)Titol,Revista,Volum,Pàgines</li>  <!--List item 1 -->
-  <li>Sempre posem primer els autors pel cognom y les inicials del nom,després l'any entre parentesi, el titol,després el nom de la revista abreujat, el volum i les pagines que te.</li>  <!--List item 2 -->
- </ul> <!--Un ordered list --> 
-<img src="captura1.png">
-  <p>En la figura x podem veure que no hi ha/ hi ha diferencies estadisticament notables entre X comvencionals i ecologics.
-  Obsebem que els resultats son X entre X I X de vitamina C respecte X de X</p>
+    #themeToggle {
+      border: none;
+      background: transparent;
+      font-size: 1.3rem;
+      color: inherit;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    @media (max-width: 576px) { .logo { width: 30px; height: 30px; } }
+    @media (min-width: 992px) { .logo { width: 50px; height: 50px; } }
+
+    /* Opcional: agregar un pequeño sombreado para diferenciar la navbar */
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body data-bs-theme="light">
+  <!-- Navbar simplificada -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!--Imagen logo -->
+        <img src="logo1.png" alt="Logo" class="logo rounded-circle me-2">
+        <span class="fw-bold">Web de Yeray</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://ygonzale1.github.io/">
+              <i class="fa-solid fa-link me-1"></i> Accés principal
+            </a>
+          </li>
+        </ul>
+        <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+     <!-- ----------------------Contenido original---------------------------------- -->
+  <main class="container py-5">
+    <h1>Comparem coriandre ecològic i convencional: quin te mes nutrients segons la ciencia i segons la IA</h1>
+    <p>He trobat diferents articles cientifics que estudian el meu tema i els trobareu a continuació en format APA7. APA7 es una forma d'escriure un article cientific</p>
+    <ul>
+      <li>Autors(Any)Titol,Revista,Volum,Pàgines</li>
+      <li>Sempre posem primer els autors pel cognom y les inicials del nom,després l'any entre parentesi, el titol,després el nom de la revista abreujat, el volum i les pàgines que te.</li>
+    </ul>
+    <img src="captura1.png" class="img-fluid my-3" alt="Gràfic comparació coriandre">
+    <p>En la figura x podem veure que no hi ha/ hi ha diferencies estadisticament notables entre X comvencionals i ecologics.
+    Obsebem que els resultats son X entre X I X de vitamina C respecte X de X</p>
+  </main>
+
+      <!-- -----------------------------------------Fin del contenido------------------------------------------------ -->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    themeToggle.addEventListener('click', () => {
+      if (document.body.getAttribute('data-bs-theme') === 'dark') {
+        document.body.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.replace('fa-sun','fa-moon');
+      } else {
+        document.body.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.replace('fa-moon','fa-sun');
+      }
+    });
+  </script>
 </body>
 </html>
+
