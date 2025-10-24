@@ -10,7 +10,6 @@
   /* Fondo general */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9fafb;
     color: #333;
     margin: 0;
     padding: 30px;
@@ -49,6 +48,44 @@
     margin: 40px 0;
     border-radius: 2px;
   }
+
+  /*Boton */
+ button {
+  background: linear-gradient(to top, #368b65, #71d1a6) ;
+  border:none;
+  border-color: #333;
+  border-radius: 8px;
+  font-size: 30px;
+  padding:10px;
+  letter-spacing: 1.5px;
+  margin: 10px;
+  box-shadow: 10px 10px 15px gray;
+
+ }
+   #button{
+    display: flex;
+    justify-content: center;
+   }
+  /*Texto del boton*/
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+    
+  }
+
+  /*Video*/
+
+  video{
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px;
+  }
+
+  #video {
+    display: flex;
+    justify-content: center;
+  }
 </style>
 </head>
 <body>
@@ -65,7 +102,7 @@
 <p>Maria L Amodio,Giancarlo Colelli,Janine K Hasey and Adel A Kader1(2007)A comparative study of composition and
 postharvest performance of organically and conventionally grown kiwifruits,Journal of the Science of Food and Agriculture,87,9.</p>
 
-<p><p>En aquesta taula podem veure a l'esquerra la quantitat d'àcid ascòrbic (vitamina C) en g/kg. La taula mostra la quantitat d'antioxidants que té un kiwi orgànic i un ecològic, després d'estar emmagatzemat a 0 ºC durant 4 mesos, i també després d'una simulació de vida a 20 ºC:</p></p>
+<p>En aquesta taula podem veure a l'esquerra la quantitat d'àcid ascòrbic (vitamina C) en g/kg. La taula mostra la quantitat d'antioxidants que té un kiwi orgànic i un ecològic, després d'estar emmagatzemat a 0 ºC durant 4 mesos, i també després d'una simulació de vida a 20 ºC:</p>
  
 <img src="captura_taula_1.png">
 
@@ -127,8 +164,10 @@ orchards, Cientific reposts, 68, 13.</p>
  <div class="separador"></div>
  <h1>Video explicatiu:</h1>
   <p> El video no es el final es una proba per veure si funciona el posar videos :D</p>
-<video src="video.mp4" width="640" height="360" controls></video> <!-- video con altura i anchura ademas de controles para pausar i to la movida-->
 
+<div id="video">
+  <video src="video.mp4" width="640" height="360" controls></video> <!-- video con altura i anchura ademas de controles para pausar i to la movida-->
+</div>
 <!--Enllaços------------------------------------------------------------------------>
  <div class="separador"></div>
 
@@ -137,15 +176,12 @@ orchards, Cientific reposts, 68, 13.</p>
   <p>Aqui tens els enllaços als articles utilitzats per aquesta investigacio, per si vols buscar tu mateix les dades mencionades o profunditzar mes en el tema:</p>
 
 
-  <ul>
-
-    <li><a href="https://scijournals.onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2820">Article 1</li>
-
-    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0023643813001539">Article 2</li>
-
-    <li><a href="https://www.nature.com/articles/s41598-025-91768-5">Article 3</li>
-
-  </ul>
+<div id="button">
+  <button><a href="https://scijournals.onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2820"> <b>ARTICLE 1 </b></button>
+  <button><a href="https://www.sciencedirect.com/science/article/abs/pii/S0023643813001539"> <b> ARTICLE 2</b></button>
+  <button><a href="https://www.nature.com/articles/s41598-025-91768-5"> <b>ARTICLE 3</b></button>
+</div>
+  
   
 
 </body>
