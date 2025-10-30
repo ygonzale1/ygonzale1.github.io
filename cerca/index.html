@@ -112,7 +112,6 @@
   p, ul, li {
     font-family: 'Roboto', sans-serif;
     padding: 30px;
-    padding-bottom: 3px;
   }
 
   
@@ -145,11 +144,16 @@
     letter-spacing: 1.5px;
     margin: 10px;
     box-shadow: 10px 10px 45px gray;
+
+     /*  Cada botón ocupa 1/3 del ancho máximo (ajustable) */
+  flex: 1 1 calc(25% - 30px);
+  max-width: 200px; /* Evita que crezcan demasiado */
   }
 
   #button {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap ;
   }
 
   /*Texto del boton*/
@@ -174,7 +178,7 @@
 <h1><b>Comparem kiwis ecològics i convencionals: quin té més nutrients segons la ciència i segons la IA</b></h1>
   
 <p>He trobat diferents articles científics que estudien el meu tema i els trobareu a continuació en format APA7. APA7 és una forma d'escriure un article científic.</p>
- 
+ <!----------------------------------------------- Article 1 ------------------------------------------->
 <h2><b>Article 1: </b></h2>
 <p>Maria L Amodio, Giancarlo Colelli, Janine K Hasey and Adel A Kader1 (2007) A comparative study of composition and postharvest performance of organically and conventionally grown kiwifruits, Journal of the Science of Food and Agriculture, 87, 9.</p>
 
@@ -185,7 +189,7 @@
 <p>Com podem observar a la taula, a la columna de l'esquerra on es mesura després de 4 mesos d'emmagatzematge a 0 ºC, podem observar que els kiwis orgànics tenen 0.33 a d'àcid ascòrbic i els convencionals 0.29 b. A la taula de la dreta on es fa la simulació de vida a 20 ºC, els kiwis orgànics tenen 0.28 ns d'àcid ascòrbic i els convencionals tenen 0.27 ns.</p>
 
 <p>En conclusió, aquest article diu que els kiwis orgànics contenen més àcid ascòrbic (vitamina C) que els kiwis convencionals, pero que no tenen molta diferencia i que es casi inexistent.</p> 
-
+<!-------------------------------------------------- Article 2 ---------------------------------------------->
 <h2><b>Article 2: </b></h2>
 <p>M. Nunes-Damacenoa, N. Muñoz-Ferreirob, M.A. Romero-Rodrígueza, M.L. Vázquez-Odériza (2013) A comparison of kiwi fruit from conventional, integrated and organic production systems, Elsevier Journal, 54, 7.</p>
 
@@ -196,7 +200,7 @@
 <p>Podem observar que la cuantitat de vitamina C als kiwis organics (74,28 mg/100g) sembla ser superior als convencionals (74,14 mg/100g).</p>
 
 <p>Aquest article, com l'anterior, es pot observar que la diferencia de vitamina C es practicament inexistent pero els kiwis organics segueixen teinint més vitamina C </p>
-
+<!------------------------------------------------------ Article 3------------------------------------------->
 <h2><b>Article 3:</b> </h2>
 
 <p>Marziyeh Rabiee, Behzad Kaviani, Shahram Sedaghathoor, Alireza Eslami (2025) Nutritional and qualitative comparison of temperate fruits from conventional and organic orchards, Cientific Reposts, 68, 13.</p>
@@ -208,6 +212,23 @@
 <p>Com es veu a la foto, diu que, en general, els kiwis organics, tenien mes minerals, vitamines,etc.</p>
 
 <p>En conclusió, aquest tambe diu que els kiwis organics tenen mes vitamina C que els kiwis cultivats de forma convencional.</p>
+
+<!--- --------------------------------------------Article 4 ------------------------------------------------------------>
+
+<div class="separador"></div>
+
+<h2><b>Article 4:</b></h2>
+
+<p>Article amb el APA7</p>
+
+<p>Text </p>
+
+<img src="captura_taula_4.png">
+
+<p>Text 2</p>
+
+<p> Conclusió</p>
+
 
 <!-- Separador visual antes de la sección Chat GPT ----------------------------------------------------->
 <div class="separador"></div>
@@ -252,10 +273,13 @@
   <button><a href="https://scijournals.onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2820"><b>ARTICLE 1</b></a></button>
   <button><a href="https://www.sciencedirect.com/science/article/abs/pii/S0023643813001539"><b>ARTICLE 2</b></a></button>
   <button><a href="https://www.nature.com/articles/s41598-025-91768-5"><b>ARTICLE 3</b></a></button>
+  <button><a href="#"><b>ARTICLE 4</b></a></button>
+  <button><a href="#"><b>ARTICLE 5</b></a></button>
+  <button><a href="#"><b>ARTICLE 6</b></a></button>
+  <button><a href="#"><b>ARTICLE 7</b></a></button>
+  <button><a href="#"><b>ARTICLE 8</b></a></button>
 </div>
   
-
-<p></p>
 
 
 </body>
