@@ -109,6 +109,52 @@
   <!-- Contingut -->
   <main class="container py-5">
 
+
+    <style>/* Mejorar texto general */
+main {
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Títulos más bonitos */
+h1 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Párrafos más cómodos de leer */
+p {
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+/* Imágenes más bonitas */
+main img {
+  border-radius: 12px;        /* bordes curvos */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+  margin: 10px 10px 20px 0;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+/* Pequeño efecto al pasar el ratón */
+main img:hover {
+  transform: scale(1.02);
+}</style>
+   
+    </style>
+
 <h1>Air pollution, meteorological conditions and respiratory infections in El Prat de Llobregat.A 14-year spatiotemporal analysis:</h1>
     <p>The objectives of this research project are:</p>
     
@@ -118,10 +164,69 @@
         Corresponding to hourly data of air pollutants from llear 2009 to 2025. Data icluded: nitrogen oxide (NO), nitrogen dioxide (NO<sub>2</sub>), nitrogen oxides (NO<sub>X</sub>), ozone (O<sub>3</sub>)and sulphur dioxide (SO<sub>2</sub>).  </li>
       <li>Meteorological data is not available from <a href="https://www.meteo.cat/observacions/llistat-xema"> Meteocat XEMA server (Meteorological data server of Catalonia)</a>,soo we chose the same meteorological station. The data structure is based on semi-hourly data that is, data every 30 minutes from 2009. 
         Data included: temperature, humidity, pressure, wind direction, wind speed and solar irradiance.</li>
-      <li>Respiratory infection data are collected from Information System for Infection Surveillance in Catalonia server (SIVIC) using data from region 75, that is Barcelona metropolitan south region, 182 is the Primary care centre from El Prat. </li>
+      <li>Respiratory infection data are collected from Information <a href="https://salutpublica.gencat.cat/ca/ambits/vigilancia/sivic/">System for Infection Surveillance in Catalonia server (SIVIC)</a> using data from region 75, that is Barcelona metropolitan south region, 182 is the Primary care centre from El Prat. </li>
     </ul>
-    
-  </main>
+
+
+    <h2>1. Area of study: </h2>
+     <p>Para este preojecto, cada grupo ha sido asignado con una localidad distinta dentro de catalunya. Los estudios de nuestro grupo estan destinados a la localidad de El Prat (jardins de la pau), situada en la zona de barcelona metropolitana sud en el area 75 de los datos SIVIC.</p>
+ 
+     <img src="mapa-elprat.png" width="520" height="220"> <img src="mapa-elprat2.png" width="520" height="220">
+
+     <p>El Prat de Llobregat es una ciudad de aproximadamente 66,000 habitantes, situada en la comarca de Baix Llobregat y formando parte del Área Metropolitana de Barcelona. Su ubicación estratégica la coloca a solo 2–3 km del Aeropuerto de Barcelona–El Prat, lo que implica una importante influencia del tráfico aéreo sobre la calidad del aire. Además, la ciudad está conectada mediante autopistas, trenes y metro, funcionando como un corredor logístico e industrial, con polígonos industriales cercanos y presencia de actividades portuarias y ferroviarias. Todo esto, junto con el tráfico urbano intenso, constituye las principales fuentes de contaminación atmosférica que pueden afectar la salud respiratoria de la población.</p>
+
+     <h2>2. Data sources:</h2>
+     <p>Hemos necesitado de muchos datos durante este projecto como los datos medicos de SIVIC o datos meteorologicos y de contaminacion de Meteocat y XEMA. Ahora mostrare enlaces a las webs de donde hemos sacado todos los datos y una brebe explicacion de para que sirve cada uno.</p>
+       
+        
+
+    <p><b><li>SIVIC (Health data):</li></b> El Sistema d’Informació per a la Vigilància d’Infeccions a Catalunya (SIVIC) és un sistema de vigilància creat per seguir no només els casos més greus sinó també els casos comunitaris de diverses infeccions respiratòries, com són Covid-19, grip, virus sincitial respiratori i enterovirus, entre d’altres.
+
+            El SIVIC integra la informació recollida als centres d’atenció primària, als hospitals, als laboratoris i a l'Agència de Salut Pública de Catalunya i permet analitzar les infeccions respiratòries agudes en temps real per poder monitorar tendències i donar alertes.</p>
+
+    <p><b><li>XEMA (Meteorological data):</li></b> La Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) és el conjunt de més de 180 estacions automàtiques gestionades pel Meteo.cat (Servei Meteorològic de Catalunya) distribuïdes pel territori. Aquestes estacions mesuren en temps real variables com temperatura, precipitació, vent, humitat i pressió per a prediccions i estudis climàtics.</p>
+
+    <p><b><li>XPVCA (Air pollution data) :</li></b> La Xarxa de Vigilància i Previsió de la Contaminació Atmosfèrica (XPVCA) es la red oficial de Cataluña que monitoriza la calidad del aire en tiempo real. Proporciona datos de contaminantes permitiendo estudiar su evolución temporal y su impacto en la salud y el medio ambiente.</p>
+  
+    <h2>3. Methodology:</h2>
+    <p>Para manipular y observar los datos que hemos descargado hemos usado R studio, un entorno de desarrollo integrado para el lenguaje de programación R, dedicado a la computación estadística y gráficos. Hemos utilizado librerias como Openair y Tidyverse para poder manipular, limpiar y orednar los datos obtenidos para luego hacer graficas como las siguientes:</p>
+
+    <img src="archivos-rstudio.png" width="520" height="220">
+
+    <img src="tabla-R1" width="520" height="220">   <img src="tabla-R2" width="520" height="220">   <img src="tabla-R3" width="520" height="220"> 
+
+    <h2>4. Results:</h2>
+    <p><b><li>NO<sub>2</sub>:</li></b> La llei europea diu que en un any el màxim de vegades que pots superar els 200 micrograms per metre cúbic (µg/m³) de diòxid de nitrogen en un any és 18. Nosaltres hem observat que dona 0 superacions en 17 anys (2009-2025). El contaminant no2 ha incomplert el límit anual en 2 dels 16 anys analitzats ( 12.5 % del període ).
+</p>
+
+   <h2>5. Discussion:</h2>
+
+<p><b><li>Contaminantes más influyentes:</li></b></p>
+<p>
+El contaminante más relevante en el análisis es el dióxido de nitrógeno (NO₂). Es el único que ha superado el límite anual en algunos años y presenta un número elevado de días con concentraciones superiores a 50 µg/m³. Además, las gráficas muestran picos claros durante el día. Esto indica que el NO₂ es el principal indicador de contaminación en la zona, asociado principalmente al tráfico y a la actividad urbana. En cambio, el ozono (O₃) y el dióxido de azufre (SO₂) no presentan superaciones significativas de los límites establecidos.
+</p>
+
+<p><b><li>Condiciones meteorológicas que afectan:</li></b></p>
+<p>
+Las condiciones meteorológicas influyen en la concentración de contaminantes. La radiación solar favorece la formación de ozono, especialmente durante las horas centrales del día. El viento ayuda a dispersar los contaminantes y reduce su concentración, mientras que situaciones de atmósfera estable o con poco viento favorecen su acumulación. En invierno también pueden producirse inversiones térmicas que mantienen los contaminantes cerca del suelo y aumentan los niveles de NO₂.
+</p>
+
+<p><b><li>Patrones estacionales:</li></b></p>
+<p>
+Los datos muestran patrones claros a lo largo del día, de la semana y del año. El NO₂ presenta dos picos diarios: uno por la mañana y otro por la tarde, coincidiendo con las horas de mayor tráfico. Durante la semana las concentraciones suelen ser más altas que durante el fin de semana. A nivel anual, el NO₂ suele ser más elevado en invierno debido a peores condiciones de dispersión, mientras que el ozono aumenta en verano por la mayor radiación solar.
+</p>
+
+<p><b><li>Implicaciones para la salud pública:</li></b></p>
+<p>
+Aunque en general los límites legales se cumplen, la presencia de NO₂ puede tener efectos en la salud. Este contaminante está relacionado con problemas respiratorios, irritación de las vías respiratorias y agravamiento del asma. Los grupos más vulnerables son los niños, las personas mayores y quienes padecen enfermedades respiratorias. Por ello, incluso niveles moderados de contaminación pueden representar un riesgo si la exposición es prolongada.
+</p>
+
+
+
+
+
+
+</main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
