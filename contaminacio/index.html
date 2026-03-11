@@ -107,10 +107,9 @@
   </nav>
 
   <!-- Contingut -->
-  <main class="container py-5">
+ <main class="container py-5">
 
-
-    <style>/* Mejorar texto general */
+<style>/* Improve general text */
 main {
   max-width: 1000px;
   margin: auto;
@@ -118,7 +117,7 @@ main {
   font-size: 1.05rem;
 }
 
-/* Títulos más bonitos */
+/* Better-looking titles */
 h1 {
   font-weight: 700;
   margin-bottom: 25px;
@@ -132,99 +131,75 @@ h2 {
   padding-bottom: 5px;
 }
 
-/* Párrafos más cómodos de leer */
+/* Easier-to-read paragraphs */
 p {
   text-align: justify;
   margin-bottom: 18px;
 }
 
-/* Imágenes más bonitas */
+/* Better-looking images */
 main img {
-  border-radius: 12px;        /* bordes curvos */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+  border-radius: 12px;        /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* soft shadow */
   margin: 10px 10px 20px 0;
   max-width: 100%;
   height: auto;
   transition: transform 0.2s ease;
 }
 
-/* Pequeño efecto al pasar el ratón */
+/* Small hover effect */
 main img:hover {
   transform: scale(1.02);
 }</style>
-   
-    </style>
 
-<h1>Air pollution, meteorological conditions and respiratory infections in El Prat de Llobregat.A 14-year spatiotemporal analysis:</h1>
-    <p>The objectives of this research project are:</p>
-    
-    <ul>
-      <li>Yeray and Diego are studying all data from El Prat that is a city located in Baix Llobregat region. 
-        In this region we are using data from<a href="https://mediambient.gencat.cat/ca/05_ambits_dactuacio/atmosfera/qualitat_de_laire/avaluacio/xarxa_de_vigilancia_i_previsio_de_la_contaminacio_atmosferica_xvpca/index.html"> Air Pollution Prevention and Monitoring Network (XPVCA in catalan).</a>
-        Corresponding to hourly data of air pollutants from llear 2009 to 2025. Data icluded: nitrogen oxide (NO), nitrogen dioxide (NO<sub>2</sub>), nitrogen oxides (NO<sub>X</sub>), ozone (O<sub>3</sub>)and sulphur dioxide (SO<sub>2</sub>).  </li>
-      <li>Meteorological data is not available from <a href="https://www.meteo.cat/observacions/llistat-xema"> Meteocat XEMA server (Meteorological data server of Catalonia)</a>,soo we chose the same meteorological station. The data structure is based on semi-hourly data that is, data every 30 minutes from 2009. 
-        Data included: temperature, humidity, pressure, wind direction, wind speed and solar irradiance.</li>
-      <li>Respiratory infection data are collected from Information <a href="https://salutpublica.gencat.cat/ca/ambits/vigilancia/sivic/">System for Infection Surveillance in Catalonia server (SIVIC)</a> using data from region 75, that is Barcelona metropolitan south region, 182 is the Primary care centre from El Prat. </li>
-    </ul>
+<h1>Air pollution, meteorological conditions and respiratory infections in El Prat de Llobregat: A 14-year spatiotemporal analysis</h1>
+<p>The objectives of this research project are:</p>
 
+<ul>
+  <li>Yeray and Diego are studying all data from El Prat, a city located in the Baix Llobregat region. In this region, we are using data from the <a href="https://mediambient.gencat.cat/ca/05_ambits_dactuacio/atmosfera/qualitat_de_laire/avaluacio/xarxa_de_vigilancia_i_previsio_de_la_contaminacio_atmosferica_xvpca/index.html">Air Pollution Prevention and Monitoring Network (XPVCA in Catalan)</a>. This corresponds to hourly air pollutant data from 2009 to 2025, including nitrogen oxide (NO), nitrogen dioxide (NO<sub>2</sub>), nitrogen oxides (NO<sub>X</sub>), ozone (O<sub>3</sub>), and sulfur dioxide (SO<sub>2</sub>).</li>
+  <li>Meteorological data is obtained from the <a href="https://www.meteo.cat/observacions/llistat-xema">Meteocat XEMA server (Catalonia Meteorological Data Server)</a>. The data structure is semi-hourly (every 30 minutes) from 2009 and includes temperature, humidity, pressure, wind direction, wind speed, and solar irradiance.</li>
+  <li>Respiratory infection data are collected from the <a href="https://salutpublica.gencat.cat/ca/ambits/vigilancia/sivic/">Information System for Infection Surveillance in Catalonia (SIVIC)</a> using data from region 75, which is the Barcelona Metropolitan South region; 182 is the Primary Care Centre from El Prat.</li>
+</ul>
 
-    <h2>1. Area of study: </h2>
-     <p>Para este preojecto, cada grupo ha sido asignado con una localidad distinta dentro de catalunya. Los estudios de nuestro grupo estan destinados a la localidad de El Prat (jardins de la pau), situada en la zona de barcelona metropolitana sud en el area 75 de los datos SIVIC.</p>
- 
-     <img src="mapa-elprat.png" width="520" height="220"> <img src="mapa-elprat2.png" width="520" height="220">
+<h2>1. Area of study:</h2>
+<p>For this project, each group was assigned a different locality within Catalonia. Our group's study focuses on El Prat (Jardins de la Pau), located in the Barcelona Metropolitan South area, region 75 of the SIVIC data.</p>
 
-     <p>El Prat de Llobregat es una ciudad de aproximadamente 66,000 habitantes, situada en la comarca de Baix Llobregat y formando parte del Área Metropolitana de Barcelona. Su ubicación estratégica la coloca a solo 2–3 km del Aeropuerto de Barcelona–El Prat, lo que implica una importante influencia del tráfico aéreo sobre la calidad del aire. Además, la ciudad está conectada mediante autopistas, trenes y metro, funcionando como un corredor logístico e industrial, con polígonos industriales cercanos y presencia de actividades portuarias y ferroviarias. Todo esto, junto con el tráfico urbano intenso, constituye las principales fuentes de contaminación atmosférica que pueden afectar la salud respiratoria de la población.</p>
+<img src="mapa-elprat.png" width="520" height="220"> <img src="mapa-elprat2.png" width="520" height="220">
 
-     <h2>2. Data sources:</h2>
-     <p>Hemos necesitado de muchos datos durante este projecto como los datos medicos de SIVIC o datos meteorologicos y de contaminacion de Meteocat y XEMA. Ahora mostrare enlaces a las webs de donde hemos sacado todos los datos y una brebe explicacion de para que sirve cada uno.</p>
-       
-        
+<p>El Prat de Llobregat is a city of approximately 66,000 inhabitants, located in the Baix Llobregat region and part of the Barcelona Metropolitan Area. Its strategic location is only 2–3 km from Barcelona–El Prat Airport, which implies a significant influence of air traffic on air quality. The city is also connected by highways, trains, and metro, acting as a logistics and industrial corridor with nearby industrial areas and port and railway activities. All of this, along with heavy urban traffic, constitutes the main sources of air pollution that may affect the respiratory health of the population.</p>
 
-    <p><b><li>SIVIC (Health data):</li></b> El Sistema d’Informació per a la Vigilància d’Infeccions a Catalunya (SIVIC) és un sistema de vigilància creat per seguir no només els casos més greus sinó també els casos comunitaris de diverses infeccions respiratòries, com són Covid-19, grip, virus sincitial respiratori i enterovirus, entre d’altres.
+<h2>2. Data sources:</h2>
+<p>We needed many data sources for this project, including medical data from SIVIC and meteorological and pollution data from Meteocat and XEMA. Below are the websites we used and a brief explanation of each:</p>
 
-            El SIVIC integra la informació recollida als centres d’atenció primària, als hospitals, als laboratoris i a l'Agència de Salut Pública de Catalunya i permet analitzar les infeccions respiratòries agudes en temps real per poder monitorar tendències i donar alertes.</p>
+<p><b><li>SIVIC (Health data):</li></b> The Information System for Infection Surveillance in Catalonia (SIVIC) is a system created to monitor not only severe cases but also community cases of various respiratory infections, such as Covid-19, influenza, respiratory syncytial virus, and enterovirus, among others. It integrates data collected from primary care centers, hospitals, laboratories, and the Catalan Public Health Agency, allowing real-time analysis of acute respiratory infections to monitor trends and issue alerts.</p>
 
-    <p><b><li>XEMA (Meteorological data):</li></b> La Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) és el conjunt de més de 180 estacions automàtiques gestionades pel Meteo.cat (Servei Meteorològic de Catalunya) distribuïdes pel territori. Aquestes estacions mesuren en temps real variables com temperatura, precipitació, vent, humitat i pressió per a prediccions i estudis climàtics.</p>
+<p><b><li>XEMA (Meteorological data):</li></b> The Network of Automatic Meteorological Stations (XEMA) is composed of over 180 automatic stations managed by Meteocat (Catalonia Meteorological Service), distributed across the territory. These stations measure in real time variables such as temperature, precipitation, wind, humidity, and pressure for forecasting and climatic studies.</p>
 
-    <p><b><li>XPVCA (Air pollution data) :</li></b> La Xarxa de Vigilància i Previsió de la Contaminació Atmosfèrica (XPVCA) es la red oficial de Cataluña que monitoriza la calidad del aire en tiempo real. Proporciona datos de contaminantes permitiendo estudiar su evolución temporal y su impacto en la salud y el medio ambiente.</p>
-  
-    <h2>3. Methodology:</h2>
-    <p>Para manipular y observar los datos que hemos descargado hemos usado R studio, un entorno de desarrollo integrado para el lenguaje de programación R, dedicado a la computación estadística y gráficos. Hemos utilizado librerias como Openair y Tidyverse para poder manipular, limpiar y orednar los datos obtenidos para luego hacer graficas como las siguientes:</p>
+<p><b><li>XPVCA (Air pollution data):</li></b> The Air Pollution Monitoring and Forecast Network (XPVCA) is Catalonia’s official network that monitors air quality in real time. It provides pollutant data, allowing the study of their temporal evolution and impact on health and the environment.</p>
 
-    <img src="archivos-rstudio.png" width="520" height="220">
+<h2>3. Methodology:</h2>
+<p>To manipulate and analyze the downloaded data, we used R Studio, an integrated development environment for the R programming language, dedicated to statistical computing and graphics. We used libraries like Openair and Tidyverse to clean, manipulate, and organize the data for creating graphs like the following:</p>
 
-    <img src="tabla-R1.png" width="520" height="220">   <img src="tabla-R2.png" width="520" height="220">   <img src="tabla-R3.png" width="520" height="220"> 
+<img src="archivos-rstudio.png" width="520" height="220">
 
-    <h2>4. Results:</h2>
-    <p><b><li>NO<sub>2</sub>:</li></b> La llei europea diu que en un any el màxim de vegades que pots superar els 200 micrograms per metre cúbic (µg/m³) de diòxid de nitrogen en un any és 18. Nosaltres hem observat que dona 0 superacions en 17 anys (2009-2025). El contaminant no2 ha incomplert el límit anual en 2 dels 16 anys analitzats ( 12.5 % del període ).
-</p>
+<img src="tabla-R1.png" width="520" height="220"> <img src="tabla-R2.png" width="520" height="220"> <img src="tabla-R3.png" width="520" height="220">
 
-   <h2>5. Discussion:</h2>
+<h2>4. Results:</h2>
+<p><b><li>NO<sub>2</sub>:</li></b> European law states that in one year, the maximum number of times nitrogen dioxide (NO₂) can exceed 200 micrograms per cubic meter (µg/m³) is 18. We observed 0 exceedances in 17 years (2009–2025). The NO₂ pollutant exceeded the annual limit in 2 of the 16 years analyzed (12.5% of the period).</p>
 
-<p><b><li>Contaminantes más influyentes:</li></b></p>
-<p>
-El contaminante más relevante en el análisis es el dióxido de nitrógeno (NO₂). Es el único que ha superado el límite anual en algunos años y presenta un número elevado de días con concentraciones superiores a 50 µg/m³. Además, las gráficas muestran picos claros durante el día. Esto indica que el NO₂ es el principal indicador de contaminación en la zona, asociado principalmente al tráfico y a la actividad urbana. En cambio, el ozono (O₃) y el dióxido de azufre (SO₂) no presentan superaciones significativas de los límites establecidos.
-</p>
+<h2>5. Discussion:</h2>
 
-<p><b><li>Condiciones meteorológicas que afectan:</li></b></p>
-<p>
-Las condiciones meteorológicas influyen en la concentración de contaminantes. La radiación solar favorece la formación de ozono, especialmente durante las horas centrales del día. El viento ayuda a dispersar los contaminantes y reduce su concentración, mientras que situaciones de atmósfera estable o con poco viento favorecen su acumulación. En invierno también pueden producirse inversiones térmicas que mantienen los contaminantes cerca del suelo y aumentan los niveles de NO₂.
-</p>
+<p><b><li>Most influential pollutants:</li></b></p>
+<p>The most relevant pollutant in the analysis is nitrogen dioxide (NO₂). It is the only one that exceeded the annual limit in some years and shows a high number of days with concentrations above 50 µg/m³. Graphs also show clear daily peaks, indicating NO₂ as the main indicator of pollution in the area, mainly associated with traffic and urban activity. In contrast, ozone (O₃) and sulfur dioxide (SO₂) do not show significant limit exceedances.</p>
 
-<p><b><li>Patrones estacionales:</li></b></p>
-<p>
-Los datos muestran patrones claros a lo largo del día, de la semana y del año. El NO₂ presenta dos picos diarios: uno por la mañana y otro por la tarde, coincidiendo con las horas de mayor tráfico. Durante la semana las concentraciones suelen ser más altas que durante el fin de semana. A nivel anual, el NO₂ suele ser más elevado en invierno debido a peores condiciones de dispersión, mientras que el ozono aumenta en verano por la mayor radiación solar.
-</p>
+<p><b><li>Meteorological conditions affecting pollution:</li></b></p>
+<p>Meteorological conditions influence pollutant concentrations. Solar radiation favors ozone formation, especially during midday. Wind helps disperse pollutants and reduce concentration, while stable or low-wind conditions favor accumulation. In winter, thermal inversions can also keep pollutants near the ground, increasing NO₂ levels.</p>
 
-<p><b><li>Implicaciones para la salud pública:</li></b></p>
-<p>
-Aunque en general los límites legales se cumplen, la presencia de NO₂ puede tener efectos en la salud. Este contaminante está relacionado con problemas respiratorios, irritación de las vías respiratorias y agravamiento del asma. Los grupos más vulnerables son los niños, las personas mayores y quienes padecen enfermedades respiratorias. Por ello, incluso niveles moderados de contaminación pueden representar un riesgo si la exposición es prolongada.
-</p>
+<p><b><li>Seasonal patterns:</li></b></p>
+<p>Data shows clear patterns across the day, week, and year. NO₂ has two daily peaks: morning and afternoon, coinciding with peak traffic hours. Concentrations are typically higher on weekdays than weekends. Annually, NO₂ is higher in winter due to poor dispersion, while ozone increases in summer due to higher solar radiation.</p>
 
-
-
-
-
+<p><b><li>Public health implications:</li></b></p>
+<p>Although legal limits are generally met, NO₂ presence can affect health. This pollutant is linked to respiratory problems, airway irritation, and asthma aggravation. Vulnerable groups include children, the elderly, and people with respiratory illnesses. Therefore, even moderate pollution levels can pose a risk if exposure is prolonged.</p>
 
 </main>
 
