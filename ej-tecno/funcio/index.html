@@ -20,6 +20,87 @@
 
   <title>Exercici amb funcions</title>
   <!-- És el títol que apareix a la pestanya del navegador. -->
+
+  <style>
+  /* Configuració global i tipografia */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Contenidor principal per limitar l'amplada màxima en pantalles grans */
+  .container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  /* Disseny del títol principal */
+  h1 {
+    font-size: 2.25rem;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+  }
+
+  /* Disseny del text descriptiu */
+  p {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 24px;
+  }
+
+  /* Contenidor de l'iframe per donar-li vores suaus i ombra */
+  .iframe-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+  }
+
+  /* L'iframe s'adapta al seu contenidor */
+  iframe {
+    display: block;
+    width: 100%;
+    height: 800px; /* Alçada optimitzada per a pantalles estàndard */
+    border: 0;
+  }
+
+  /* Adaptació per a pantalles petites (mòbils) */
+  @media (max-width: 600px) {
+    body {
+      padding: 12px;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.75rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    iframe {
+      height: 600px; /* Una mica més baix en mòbils per millorar la navegació */
+    }
+  }
+</style>
+
 </head>
 <body>
 
